@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Hubs | Odyssey</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header scrolled">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <i class='bx bx-compass'></i>
+                <span>Odyssey</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                    <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions" id="auth-action">
+                <a href="login.html" class="login-link">Log In</a>
+                <a href="booking.html" class="btn btn-solid">Book Now</a>
+                <button class="mobile-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section style="padding-top: 150px; background: var(--bg-dark); color: white; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 4rem;">Global <span>Hubs</span></h1>
+            <p style="color: var(--text-muted); font-size: 1.2rem; margin-top: 1rem;">Always in range, even in the most remote corners.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section>
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 5rem;">
+                <div>
+                    <div style="margin-bottom: 3rem;">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Main Operations</h3>
+                        <p>100 Adventure Way, Reykjavik, Iceland</p>
+                        <p>+354 555 0123</p>
+                    </div>
+                    <div style="margin-bottom: 3rem;">
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">Pacific Hub</h3>
+                        <p>Pier 39, Auckland, New Zealand</p>
+                        <p>+64 9 555 0123</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">South Base</h3>
+                        <p>Punta Arenas, Chile</p>
+                        <p>+56 61 555 0123</p>
+                    </div>
+                </div>
+                <div style="background: var(--bg-dark); padding: 4rem; border-radius: 20px; color: white;">
+                    <h3 style="margin-bottom: 2rem;">Secure Channel</h3>
+                    <form>
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" class="form-control" placeholder="Explorer Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" class="form-control" placeholder="Expedition Query" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" rows="5" placeholder="Your message to the command center..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-solid" style="width: 100%; justify-content: center;">Send Priority Transmission</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="brand-logo">
+                        <i class='bx bx-compass'></i>
+                        <span>Odyssey</span>
+                    </a>
+                    <p style="margin-top: 1.5rem; color: var(--text-muted);">The global authority on extreme adventure. Pushing boundaries since 2010.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="reviews.html">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Odyssey</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Our Mission</a></li>
+                        <li><a href="contact.html">Global Hubs</a></li>
+                        <li><a href="admin.html">Partner Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Odyssey Extraordinary Adventures. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Odyssey</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard">
+
+    <!-- Dashboard Header -->
+    <header class="header scrolled">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <i class='bx bx-compass'></i>
+                <span>Odyssey</span>
+            </a>
+            <div style="display: flex; align-items: center; gap: 2rem;">
+                <span style="color: var(--primary); font-weight: 700;">ADMIN PANEL</span>
+                <a href="#" id="logout-btn" class="btn btn-outline" style="border-color: white; color: white;">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div style="margin-bottom: 3rem;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 0.5rem;">Expedition <span>Command</span></h2>
+            <p style="color: var(--text-muted);">Manage and monitor all active global bookings.</p>
+        </div>
+
+        <!-- Stats -->
+        <div class="stat-grid">
+            <div class="stat-card">
+                <i class='bx bx-bookmark-heart'></i>
+                <div class="stat-info">
+                    <h4>Total Bookings</h4>
+                    <span id="total-bookings">0</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class='bx bx-group'></i>
+                <div class="stat-info">
+                    <h4>Active Travelers</h4>
+                    <span id="total-guests">0</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class='bx bx-trending-up'></i>
+                <div class="stat-info">
+                    <h4>Success Rate</h4>
+                    <span>98.4%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bookings Table -->
+        <div class="table-container">
+            <h3 style="margin-bottom: 2rem; display: flex; align-items: center; gap: 1rem;">
+                <i class='bx bx-list-ul' style="color: var(--primary);"></i>
+                Recent Reservations
+            </h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Explorer</th>
+                        <th>Adventure</th>
+                        <th>Date</th>
+                        <th>Guests</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="bookings-list">
+                    <!-- Populated by JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

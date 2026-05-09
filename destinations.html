@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Catalog | Odyssey</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header scrolled">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <i class='bx bx-compass'></i>
+                <span>Odyssey</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="destinations.html" class="nav-link active">Destinations</a></li>
+                    <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions" id="auth-action">
+                <a href="login.html" class="login-link">Log In</a>
+                <a href="booking.html" class="btn btn-solid">Book Now</a>
+                <button class="mobile-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section style="padding-top: 150px; background: var(--bg-dark); color: white; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 4rem;">Extreme <span>Catalog</span></h1>
+            <p style="color: var(--text-muted); font-size: 1.2rem; margin-top: 1rem;">Choose your challenge from our global database of adventure spots.</p>
+        </div>
+    </section>
+
+    <!-- Catalog Grid -->
+    <section>
+        <div class="container">
+            <div class="grid">
+                <!-- Spot 1 -->
+                <div class="adventure-card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/seed/elcapitan/600/400" alt="Yosemite">
+                        <span class="card-badge">Climbing</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>El Capitan</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 2rem;">Master the granite monolith. Private vertical camping experiences available.</p>
+                        <a href="booking.html" class="btn btn-outline" style="width: 100%; justify-content: center;">Inquire</a>
+                    </div>
+                </div>
+                <!-- Spot 2 -->
+                <div class="adventure-card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/seed/fuji/600/400" alt="Japan">
+                        <span class="card-badge">Cultural</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Fuji Winter Trek</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 2rem;">A high-altitude winter ascent through the sacred forests of Japan.</p>
+                        <a href="booking.html" class="btn btn-outline" style="width: 100%; justify-content: center;">Inquire</a>
+                    </div>
+                </div>
+                <!-- Spot 3 -->
+                <div class="adventure-card">
+                    <div class="card-image">
+                        <img src="https://picsum.photos/seed/marine/600/400" alt="Italy">
+                        <span class="card-badge">Diving</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Mediterranean Caves</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 2rem;">Technical cave diving in the crystal clear waters of the Amalfi Coast.</p>
+                        <a href="booking.html" class="btn btn-outline" style="width: 100%; justify-content: center;">Inquire</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="brand-logo">
+                        <i class='bx bx-compass'></i>
+                        <span>Odyssey</span>
+                    </a>
+                    <p style="margin-top: 1.5rem; color: var(--text-muted);">The global authority on extreme adventure. Pushing boundaries since 2010.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="reviews.html">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Odyssey</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Our Mission</a></li>
+                        <li><a href="contact.html">Global Hubs</a></li>
+                        <li><a href="admin.html">Partner Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Odyssey Extraordinary Adventures. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

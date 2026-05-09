@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Adventure | Odyssey</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header scrolled">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <i class='bx bx-compass'></i>
+                <span>Odyssey</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                    <li><a href="experiences.html" class="nav-link">Experiences</a></li>
+                    <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions" id="auth-action">
+                <a href="login.html" class="login-link">Log In</a>
+                <a href="booking.html" class="btn btn-solid active">Book Now</a>
+                <button class="mobile-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <section style="padding-top: 150px; background: var(--bg-dark); color: white; text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 4rem;">Secure Your <span>Slot</span></h1>
+            <p style="color: var(--text-muted); font-size: 1.2rem; margin-top: 1rem;">Limited availability for seasonal extreme expeditions.</p>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section>
+        <div class="container" style="max-width: 800px;">
+            <div style="background: var(--bg-dark); padding: 4rem; border-radius: 20px; color: white;">
+                <form id="booking-form">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div class="form-group">
+                            <label>Choose Adventure</label>
+                            <select id="book-adventure" class="form-control" required style="background: #1f2937;">
+                                <option value="">Select Adventure</option>
+                                <option value="Icelandic Glaciers">Icelandic Glaciers</option>
+                                <option value="Deep Sea Abyss">Deep Sea Abyss</option>
+                                <option value="Sahara Traverse">Sahara Traverse</option>
+                                <option value="Amazon Survival">Amazon Survival</option>
+                                <option value="Everest Base Camp">Everest Base Camp</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Departure Date</label>
+                            <input type="date" id="book-date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Number of Adventurers</label>
+                            <input type="number" id="book-guests" min="1" max="5" class="form-control" placeholder="1" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Lead Explorer Name</label>
+                            <input type="text" id="book-name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-top: 1rem;">
+                        <label>Special Medical Requirements</label>
+                        <textarea class="form-control" rows="4" placeholder="Any specific requirements for extreme conditions?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-solid" style="width: 100%; justify-content: center; margin-top: 2rem; padding: 1.5rem;">Confirm Expedition Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="brand-logo">
+                        <i class='bx bx-compass'></i>
+                        <span>Odyssey</span>
+                    </a>
+                    <p style="margin-top: 1.5rem; color: var(--text-muted);">The global authority on extreme adventure. Pushing boundaries since 2010.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="reviews.html">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Odyssey</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">Our Mission</a></li>
+                        <li><a href="contact.html">Global Hubs</a></li>
+                        <li><a href="admin.html">Partner Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div style="display: flex; gap: 1rem; font-size: 1.5rem;">
+                        <a href="#"><i class='bx bxl-instagram'></i></a>
+                        <a href="#"><i class='bx bxl-youtube'></i></a>
+                        <a href="#"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Odyssey Extraordinary Adventures. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

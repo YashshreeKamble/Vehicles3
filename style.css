@@ -1,0 +1,435 @@
+/* ==================== 
+   Odyssey Design System (Adventure Bold)
+   ==================== */
+:root {
+    --primary: #f97316; /* Sunset Orange */
+    --primary-hover: #ea580c;
+    --secondary: #065f46; /* Forest Green */
+    --accent: #3b82f6; /* Sky Blue */
+    --bg-dark: #111827;
+    --bg-card: #1f2937;
+    --bg-body: #ffffff;
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+    --text-white: #f9fafb;
+    --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* ==================== 
+   Reset & Base 
+   ==================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-main);
+    background: var(--bg-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+section {
+    padding: 80px 0;
+}
+
+/* ==================== 
+   Typography 
+   ==================== */
+h1, h2, h3, h4 {
+    font-weight: 800;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--bg-dark);
+}
+
+.section-title span {
+    color: var(--primary);
+}
+
+/* ==================== 
+   Buttons 
+   ==================== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    gap: 0.5rem;
+}
+
+.btn-solid {
+    background: var(--primary);
+    color: var(--text-white);
+}
+
+.btn-solid:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: var(--text-white);
+}
+
+/* ==================== 
+   Navigation 
+   ==================== */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.5rem 0;
+    transition: var(--transition);
+}
+
+.header.scrolled {
+    background: var(--bg-dark);
+    padding: 1rem 0;
+    box-shadow: var(--shadow);
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-white);
+}
+
+.brand-logo i {
+    color: var(--primary);
+}
+
+.nav-list {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.nav-link {
+    color: var(--text-white);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: var(--primary);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.login-link {
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.mobile-toggle {
+    display: none;
+    font-size: 2rem;
+    color: var(--text-white);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* ==================== 
+   Hero Section 
+   ==================== */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(17, 24, 39, 0.7), rgba(17, 24, 39, 0.4)), url('hero_bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: var(--text-white);
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+/* ==================== 
+   Cards 
+   ==================== */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.adventure-card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    overflow: hidden;
+    color: var(--text-white);
+    transition: var(--transition);
+}
+
+.adventure-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image {
+    height: 250px;
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.card-body h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* ==================== 
+   Auth Forms 
+   ==================== */
+.auth-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-dark);
+}
+
+.auth-card {
+    background: var(--bg-card);
+    padding: 3rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 450px;
+    color: var(--text-white);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    background: #374151;
+    border: 1px solid #4b5563;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+}
+
+.form-control:focus {
+    border-color: var(--primary);
+}
+
+/* ==================== 
+   Dashboard 
+   ==================== */
+.dashboard {
+    padding-top: 120px;
+    background: #f3f4f6;
+    min-height: 100vh;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.stat-card i {
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.stat-info h4 {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.stat-info span {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.table-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+/* ==================== 
+   Footer 
+   ==================== */
+.footer {
+    background: var(--bg-dark);
+    color: var(--text-white);
+    padding: 6rem 0 3rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.footer-col h4 {
+    margin-bottom: 2rem;
+    color: var(--primary);
+}
+
+.footer-links li {
+    margin-bottom: 1rem;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: var(--text-muted);
+}
+
+/* ==================== 
+   Responsive 
+   ==================== */
+@media (max-width: 992px) {
+    .nav-list, .nav-actions .btn { display: none; }
+    .mobile-toggle { display: block; }
+    .hero h1 { font-size: 3.5rem; }
+    .stat-grid { grid-template-columns: 1fr; }
+}
